@@ -36,7 +36,7 @@ public class SecretCode {
         // Take the first four colors as the secret code
         List<Color> secretCode = allColors.subList(0, 4);
 
-        return convertListOfColorstoChars(secretCode);
+        return convertListOfColorsToChars(secretCode);
 
     }
 
@@ -47,7 +47,7 @@ public class SecretCode {
      * @param colors The list of colors to be converted
      * @return The string representation of the colors
      */
-    public static String convertListOfColorstoChars(List<Color> colors) {
+    public static String convertListOfColorsToChars(List<Color> colors) {
         StringBuilder result = new StringBuilder();
         for (Color color : colors) {
             if (color.equals(Color.BLACK)) {

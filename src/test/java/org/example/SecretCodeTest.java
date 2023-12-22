@@ -28,7 +28,7 @@ class SecretCodeTest {
         // Test with a list of colors
         List<Color> colors = Arrays.asList(Color.BLUE, Color.YELLOW, Color.GREEN, Color.RED);
 
-        String result = SecretCode.convertListOfColorstoChars(colors);
+        String result = SecretCode.convertListOfColorsToChars(colors);
 
         // Check if the result has the correct length
         assertEquals(4, result.length());

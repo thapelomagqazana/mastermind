@@ -29,7 +29,7 @@ public class GameBoard {
      * @param guess The player's guess.
      * @return Feedback indicating the number of matching positions and letters.
      */
-    public Feedback processGuess(String guess) {
+    public synchronized Feedback processGuess(String guess) {
         int matchingPositions = 0;
         int matchingLetters = 0;
 

@@ -16,4 +16,13 @@ class GameBoardTest {
     }
 
     // Add more test methods as needed
+    @Test
+    void testProcessGuessWithEmptySecretCode() {
+        GameBoard gameBoard = new GameBoard("");
+        Feedback feedback = gameBoard.processGuess("YBGR");
+
+        assertEquals(0, feedback.getMatchingPositions(), "Matching positions should be 0 for empty secret code");
+        assertEquals(0, feedback.getMatchingLetters(), "Matching letters should be 0 for empty secret code");
+    }
+
 }
